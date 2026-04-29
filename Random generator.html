@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Scenario Generator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        #output {
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            white-space: pre-wrap; /* Preserve whitespace formatting */
+            font-size: 16px;
+            background-color: #f9f9f9;
+            height: 300px;
+            overflow-y: auto;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Random Scenario Generator</h1>
+<button onclick="generateRandomScenario()">Generate Random Scenario</button>
+
+<div id="output"></div>
+
+<script>
+    // Define the available options for each category
+    const categories = {
+        "Commercial supply": ["in contract – expiring soon", "in contract – not expiring soon", "out of contract"],
+        "Residential supply": ["better rate", "higher rate"],
+        "CS": ["fully covered", "partially covered", "not covered"],
+        "Residential CS": ["fully covered", "not covered"],
+        "Solar": ["installed", "not installed"],
+        "Merchant Services": ["Toast", "Square", "Fees at 2%", "Fees at 3%", "Fees at 4%", "Cash Discount"],
+        "Terminal Needs": ["one handheld", "one terminal", "multiple terminals", "table service setup"],
+        "Internet": [
+            "Comcast for $400/mo", "Comcast for $200/mo", "Verizon Fios for $500/mo", "Verizon Fios for $200/mo", 
+            "Spectrum for $400/mo", "Spectrum for $200/mo", "T-Mobile Wireless for $100/mo", 
+            "Verizon Wireless for $120/mo", "AT&T Wireless for $120/mo"
+        ],
+        "Internet Situations": ["needs fiber and competitor is available", "needs fiber but competitors are not available", "does not need fiber"],
+        "Residential Internet": [
+            "Comcast for $150/mo", "Comcast for $50/mo", "Verizon Fios for $150/mo", "Verizon Fios for $40/mo", 
+            "Spectrum for $130/mo", "Spectrum for $50/mo", "T-Mobile Wireless for $50/mo", "Verizon Wireless for $50/mo", 
+            "AT&T Wireless for $40/mo", "Fidium for $40/mo", "Fidium for $100/mo", "Cox for $60/mo", 
+            "Cox for $140/mo", "Astound for $50/mo", "Astound for $110/mo"
+        ],
+        "Residential Internet Situations": ["couple who does not use it much", "a family of 5", "one person that is a gamer"],
+        "Residential Mobility": [
+            "1 line for $40/mo", "1 line for $100/mo", "2 lines for $100/mo", "2 lines for $200/mo", 
+            "3 lines for $120/mo", "3 lines for $220/mo", "4 lines for $160/mo", "4 lines for $300/mo"
+        ],
+        "VOIP": ["one line to go with their internet", "three lines for the office"]
+    };
+
+    // Function to generate a random scenario
+    function generateRandomScenario() {
+        let scenario = '';
+        
+        for (const category in categories) {
+            const options = categories[category];
+            const randomChoice = options[Math.floor(Math.random() * options.length)];
+            scenario += `${category}: ${randomChoice}\n`;
+        }
+        
+        // Display the generated scenario in the output div
+        document.getElementById('output').textContent = scenario;
+    }
+</script>
+
+</body>
+</html>
