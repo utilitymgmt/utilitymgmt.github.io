@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1" name="viewport"/><title>Reviews | Utility Management Group</title><link href="styles.css" rel="stylesheet"/><style>
+/* Reviews carousel format */
+.reviews-carousel-shell{max-width:420px;margin:0 auto;position:relative;}
+.reviews-carousel{overflow:hidden;border-radius:28px;}
+.reviews-track{display:flex;transition:transform .45s ease;will-change:transform;}
+.review-slide{min-width:100%;padding:4px;}
+.review-carousel-card{background:#fff;border:1px solid var(--line);border-radius:28px;padding:30px;min-height:340px;box-shadow:0 18px 55px rgba(16,32,51,.06);display:flex;flex-direction:column;justify-content:flex-start;}
+.review-stars{color:#f5a623;font-weight:900;letter-spacing:2px;margin-bottom:14px;}
+.review-carousel-card h3{margin:0 0 16px;font-size:1.35rem;}
+.review-carousel-card p{color:var(--muted);font-size:1.03rem;margin:0 0 14px;}
+.review-carousel-controls{display:flex;align-items:center;justify-content:center;gap:14px;margin-top:22px;}
+.review-carousel-btn{width:42px;height:42px;border-radius:999px;border:1px solid var(--line);background:#fff;color:var(--ink);font-size:1.25rem;line-height:1;display:inline-flex;align-items:center;justify-content:center;cursor:pointer;box-shadow:0 10px 28px rgba(16,32,51,.08);}
+.review-carousel-btn:hover{background:var(--soft);}
+.review-carousel-dots{display:flex;gap:8px;align-items:center;justify-content:center;}
+.review-carousel-dot{width:10px;height:10px;border-radius:999px;border:0;background:#c8d8e4;padding:0;cursor:pointer;}
+.review-carousel-dot.active{background:var(--blue);width:26px;}
+@media(max-width:620px){.review-carousel-card{padding:24px;min-height:430px}.review-carousel-controls{gap:10px}.review-carousel-btn{width:40px;height:40px}}
+</style></head><body><div aria-hidden="true" class="page-loader"><div class="loader-wheel"></div></div><script>document.addEventListener('DOMContentLoaded',function(){document.body.classList.add('page-ready');document.querySelectorAll('a[href]').forEach(function(a){var href=a.getAttribute('href');if(!href||href.startsWith('#')||href.startsWith('mailto:')||href.startsWith('tel:')||a.target==='_blank')return;a.addEventListener('click',function(e){if(e.metaKey||e.ctrlKey||e.shiftKey||e.altKey)return;document.body.classList.remove('page-ready');document.body.classList.add('page-leaving');});});});</script><header class="nav"><a class="brand" href="index.html"><img alt="Utility Management Group logo" src="assets/umg-logo.png"/></a><button aria-controls="mainNav" aria-expanded="false" aria-label="Open Menu" class="menu-toggle" type="button">☰</button><nav class="nav-links" id="mainNav"><div class="dropdown"><button class="dropbtn" type="button">Services ▾</button><div class="dropdown-menu"><a href="energy.html">Energy Supply</a><a href="solar.html">Solar</a><a href="internet.html">Internet</a><a href="mobility.html">Mobility</a><a href="voip.html">VOIP</a><a href="merchant-services.html">Merchant Services</a></div></div><a href="upload-bills.html">Upload Bills</a><a href="index.html#about">About</a><a href="careers.html">Careers</a><a href="reviews.html">Reviews</a><a href="contact.html">Contact</a></nav></header><main><section class="hero"><div class="hero-grid"><div><span class="pill">REVIEWS</span><h1>Real Feedback From Real Businesses</h1><p>Business owners and local organizations turn to Utility Management Group for clear guidance, careful account reviews, and practical ways to lower overhead without adding more complexity.</p><div class="btn-row"><a class="btn" href="upload-bills.html">Upload A Bill</a><a class="btn secondary" href="contact.html">Contact UMG</a></div></div><div class="hero-card"><div style="font-size:2rem;letter-spacing:3px;color:#f5a623;margin-bottom:10px">★★★★★</div><h2 style="margin-top:0">Trusted, Practical, and Easy to Work With</h2><p style="color:var(--muted)">Our reputation is buit through great relationships with the businesses we serve and our love for minimizing their bottom line, so they have the finances to continue thriving and growing.  Hear what some are saying about Utility Management Group.</p></div></div></section><section><div class="section-heading"><span class="pill">CLIENT FEEDBACK</span><h2>What Customers Are Saying</h2><p>Organized feedback from Google Reviews, focused on the customer experience and the value UMG brings to businesses, churches, and local organizations</p></div><div class="reviews-carousel-shell" aria-label="Google Reviews carousel">
+<div class="reviews-carousel">
+<div class="reviews-track">
+<article class="review-slide"><div class="review-carousel-card"><div><div class="review-stars">★★★★★</div><h3>Jin Chae</h3><p>“Utility Management Group did an excellent job reviewing utility bills and identifying opportunities to reduce costs. Thanks to their detailed analysis, we were able to significantly lower our utility expenses. I highly recommend Utility Management Group to any organization looking for help managing and reducing utility costs.”</br></br></br> </p></div></div></article>
+<article class="review-slide"><div class="review-carousel-card"><div><div class="review-stars">★★★★★</div><h3>Imaging Boston</h3><p>“We had a fantastic experience with UMG. They took the time to carefully analyze our utility accounts and identify areas where we were overpaying. Their team was professional, persistent, and successful in lowering our costs substantially. It’s clear they truly care about helping the community and non-profit organizations. If you want to lower your overhead, UMG is the way to go!”</br></br> </p></div></div></article>
+<article class="review-slide"><div class="review-carousel-card"><div><div class="review-stars">★★★★★</div><h3>Naciel Tejada</h3><p>“Called for help on my bill and got help right away!! It was a quick and easy experience would recommend to anyone.” </br></br></br></br></br></br></br></br> </p></div></div></article>
+<article class="review-slide"><div class="review-carousel-card"><div><div class="review-stars">★★★★★</div><h3>Negocio Cozinha</h3><p>“Daniel and Schuyler were awesome!” </br></br></br></br></br></br></br></br></br></br> </p></div></div></article>
+<article class="review-slide"><div class="review-carousel-card"><div><div class="review-stars">★★★★★</div><h3>Shahil Patel</h3><p>“UMG is a great local company that helps to aim and provide low cost energy services for small and local businesses. I appreciate the work of UMG because they helped my family's small business save lots of money in energy savings by locking us into a low rate. Therefore our rates did not spike and fluctuate during peak seasons draining us in costs.” </br></br></br> </p></div></div></article>
+<article class="review-slide"><div class="review-carousel-card"><div><div class="review-stars">★★★★★</div><h3>Moonsu Han</h3><p>“I was a little doubtful before consulting about our church’s electricity and telephone services. However, the outcome has been amazing, and I was very impressed by the company’s help. Our church has started saving a lot of money.</p><p>A special thank you should go to Ms. Park, who has helped us with her kind and warm heart. God bless the Utility Management Group and all the staff and workers. Thank you!” </br> </p></div></div></article>
+</div>
+</div>
+<div class="review-carousel-controls" aria-label="Review carousel controls"><button class="review-carousel-btn" type="button" data-review-prev aria-label="Previous review">‹</button><div class="review-carousel-dots" aria-label="Select review"></div><button class="review-carousel-btn" type="button" data-review-next aria-label="Next review">›</button></div>
+</div></section><section class="proof"><div class="section-heading"><span class="pill">READY TO START?</span><h2>Start With a Bill or a Question</h2><p>Utility Management Group can review your current service details and help identify practical next steps for energy, internet, mobility, VOIP, solar, merchant services, and more. If you want help with a service not featured, just ask about it!</p></br><a class="btn" href="upload-bills.html">Upload A Bill</a></br></div></section></main><footer class="site-footer footer-modern" id="contact">
+  <div class="footer-modern-inner">
+    <div class="footer-brand-panel">
+      <div class="footer-top footer-top-modern">
+        <img alt="Utility Management Group logo" class="footer-logo" src="assets/umg-logo.png"/>
+        <div>
+          <strong>Utility Management Group</strong><br/>
+          <a href="mailto:contact@utilitymgmt.us">contact@utilitymgmt.us</a><br/><a href="tel:18887431870">(888) 743-1870</a>
+        </div>
+      </div>
+      <p class="footer-tagline">Clear, practical support for the business services your company depends on every month.</p>
+      <div class="footer-socials-modern"><a href="https://www.facebook.com/profile.php?id=100092838354557" target="_blank" rel="noopener"><img alt="Facebook" src="assets/facebook.svg"/></a><a href="https://www.instagram.com/utilitymanagement/" target="_blank" rel="noopener"><img alt="Instagram" src="assets/instagram.svg"/></a><a href="https://www.linkedin.com/company/utility-management-group-energy/" target="_blank" rel="noopener"><img alt="LinkedIn" src="assets/linkedin.svg"/></a></div>
+    </div>
+    <div class="footer-grid footer-grid-modern">
+      <div>
+        <h4>Navigation</h4>
+        <a href="index.html#services">Services</a>
+        <a href="upload-bills.html">Upload Bills</a>
+        <a href="index.html#about">About</a>
+        <a href="careers.html">Careers</a>
+        <a href="reviews.html">Reviews</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <a href="energy.html">Energy Supply</a>
+        <a href="solar.html">Solar</a>
+        <a href="internet.html">Internet</a>
+        <a href="mobility.html">Mobility</a>
+        <a href="voip.html">VOIP</a>
+        <a href="merchant-services.html">Merchant Services</a>
+      </div>
+      <div class="footer-contact-card">
+        <h4>Get Started</h4>
+        <p>Have questions or want UMG to review a current bill?</p>
+        <a class="footer-cta" href="contact.html">Contact UMG</a>
+        <a class="footer-cta secondary" href="upload-bills.html">Upload A Bill</a>
+      </div>
+    </div>
+  </div>
+  <p class="copyright footer-copyright-modern">© 2026 Utility Management Group. All rights reserved.</p>
+</footer><script>document.addEventListener('DOMContentLoaded',function(){var b=document.querySelector('.menu-toggle');var n=document.querySelector('.nav-links');if(!b||!n)return;b.addEventListener('click',function(){var open=n.classList.toggle('is-open');b.setAttribute('aria-expanded',open?'true':'false');b.textContent=open?'×':'☰';});n.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){n.classList.remove('is-open');b.setAttribute('aria-expanded','false');b.textContent='☰';});});});</script><script>
+document.addEventListener('DOMContentLoaded',function(){
+  var shell=document.querySelector('.reviews-carousel-shell');
+  if(!shell)return;
+  var track=shell.querySelector('.reviews-track');
+  var slides=Array.from(shell.querySelectorAll('.review-slide'));
+  var dotsWrap=shell.querySelector('.review-carousel-dots');
+  var prev=shell.querySelector('[data-review-prev]');
+  var next=shell.querySelector('[data-review-next]');
+  var index=0;
+  var timer;
+  slides.forEach(function(_,i){
+    var dot=document.createElement('button');
+    dot.className='review-carousel-dot';
+    dot.type='button';
+    dot.setAttribute('aria-label','Show review '+(i+1));
+    dot.addEventListener('click',function(){goTo(i,true);});
+    dotsWrap.appendChild(dot);
+  });
+  var dots=Array.from(dotsWrap.children);
+  function render(){
+    track.style.transform='translateX(-'+(index*100)+'%)';
+    dots.forEach(function(dot,i){dot.classList.toggle('active',i===index);});
+  }
+  function goTo(i,reset){
+    index=(i+slides.length)%slides.length;
+    render();
+    if(reset) restart();
+  }
+  function restart(){
+    clearInterval(timer);
+    timer=setInterval(function(){goTo(index+1,false);},6500);
+  }
+  prev.addEventListener('click',function(){goTo(index-1,true);});
+  next.addEventListener('click',function(){goTo(index+1,true);});
+  shell.addEventListener('mouseenter',function(){clearInterval(timer);});
+  shell.addEventListener('mouseleave',restart);
+  render();
+  restart();
+});
+</script></body></html>
